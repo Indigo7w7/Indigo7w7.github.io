@@ -1129,7 +1129,7 @@ function ShowSpecialReadingForQuestion(){
 }
 
 function SetQNumReadout(){
-	document.getElementById('QNumReadout').innerHTML = (CurrQNum+1) + ' / ' + QArray.length;
+	document.getElementById('QNumReadout').innerHTML = (CurrQNum+1) + ' ' + QArray.length;
 	if ((CurrQNum+1) >= QArray.length){
 		if (document.getElementById('NextQButton') != null){
 			document.getElementById('NextQButton').style.visibility = 'hidden';
@@ -1740,7 +1740,10 @@ function CheckFinished(){
 <button id="PrevQButton" class="FuncButton" onclick="ChangeQ(-1); return false;">Pre - Estudios &lt;= Pregunta anterior</button>
 
 <span id="QNumReadout" class="QNum">&#160;</span>
-
+<br />
+<br />
+<br />
+<br />
 <button id="NextQButton" class="FuncButton" onclick="ChangeQ(1); return false;">Siguiente pregunta =&gt; Pre - Estudios</button>
 <br />
 </div>
